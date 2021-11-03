@@ -52,7 +52,8 @@ struct ContentView: View {
                     
                     VStack {
                         HStack {
-                            Text("Login:").font(.system(size: 18)).bold()
+                            Text("Login:")
+                            .font(.system(size: 18)).bold()
                             Spacer()
                         }
                         
@@ -75,18 +76,18 @@ struct ContentView: View {
                     HStack {
                         Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                             
-                            Text("Войти")
+                            Text("Войти").font(.system(size: 18)).bold()
                                 
                                 .foregroundColor(.white)
-                        }.frame(width: 120, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).background(Color.steelBlue).cornerRadius(6.0)
+                        }.frame(width: 120, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).background(Color.steelBlue).cornerRadius(6.0)
                         
                         Spacer()
                         
                         Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                             
-                            Text("Отмена")
+                            Text("Отмена").font(.system(size: 18)).bold()
                                 .foregroundColor(.steelBlue)
-                        }.frame(width: 120, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        }.frame(width: 120, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .background(Color.white).cornerRadius(6.0)
                     }
                     .frame(width: 250)
