@@ -39,14 +39,21 @@ struct FriendsView: View {
     
     var body: some View {
         
-        VStack {
+        NavigationView {
             List {
                 ForEach(friends.sorted(by: { $0.name < $1.name })) { friend in
 
-                    CellUserPrototypeView(userName: friend.name).listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
+                    NavigationLink(
+                        destination: PhotosView(),
+                        label: {
+                            CellUserPrototypeView(userName: friend.name)//.listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
+                        }).listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
+                    
+                    //CellUserPrototypeView(userName: friend.name).listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
                 }
             }
         }
+        
         //Text("FRIENDS")
     }
 }
