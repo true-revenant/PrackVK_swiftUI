@@ -13,6 +13,18 @@ struct LoginView: View {
     @State private var login = ""
     @State private var password = ""
     @State private var shouldShowLogo = true
+    @State private var showIncorrectCredentialsWarning = false
+    @Binding var isUserLoggedIn: Bool
+    
+    private func verifyLoginData() {
+        
+        if login == "admin" && password == "admin" {
+            isUserLoggedIn = true
+        } else {
+            print("Wrong login or password!")
+            showIncorrectCredentialsWarning = true
+        }
+    }
     
     private let keyboardIsOnPublisher = Publishers.Merge(
            NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
@@ -73,7 +85,7 @@ struct LoginView: View {
                     }.padding(EdgeInsets(top: 0, leading: 70, bottom: 0, trailing: 70))
                 
                     HStack {
-                        Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                        Button(action: verifyLoginData) {
                             
                             Text("Войти").font(.system(size: 18)).bold()
                                 
@@ -110,11 +122,15 @@ struct LoginView: View {
             print("Tap!")
             UIApplication.shared.endEditing()
         }
+        .alert(isPresented: $showIncorrectCredentialsWarning, content: {
+            Alert(title: Text("Error"), message: Text("Wrong login or password!"))
+        })
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        LoginView()
+        LoginView(isUserLoggedIn: .constant(false))
     }
 }

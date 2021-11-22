@@ -10,6 +10,10 @@ import SwiftUI
 fileprivate let screenWidth = UIScreen.main.bounds.size.width
 
 struct CellGroupPrototypeView: View {
+    
+    var groupTitle : String
+    var membersCount : Int
+    
     var body: some View {
         HStack {
             Image("group_4")
@@ -21,14 +25,14 @@ struct CellGroupPrototypeView: View {
             
             VStack {
                 HStack {
-                    Text("Guitar lovers")
+                    Text(groupTitle)
                         .modifier(MainCellTextModifier(fontSize: 20))
                     
                     Spacer()
                 }.padding(.leading, 10)
                 
                 HStack {
-                    Text("Количество участников: 500")
+                    Text("Количество участников: \(membersCount)")
                         .modifier(AdditionalCellTextModifier())
                     
                     Spacer()
@@ -46,6 +50,6 @@ struct CellGroupPrototypeView: View {
 
 struct CellGroupPrototypeView_Previews: PreviewProvider {
     static var previews: some View {
-        CellGroupPrototypeView()
+        CellGroupPrototypeView(groupTitle: "Guitar lovers", membersCount: 100)
     }
 }
