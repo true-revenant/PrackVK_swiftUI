@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A643B6D274BFB4500E49C9B /* mainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A643B6C274BFB4400E49C9B /* mainTabBarView.swift */; };
+		6A643B6F274C016F00E49C9B /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A643B6E274C016F00E49C9B /* PhotosView.swift */; };
+		6A643B79274C05BB00E49C9B /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 6A643B78274C05BB00E49C9B /* ASCollectionView */; };
 		6A66C26B27295CDE00146E78 /* PrackVK_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66C26A27295CDE00146E78 /* PrackVK_swiftUIApp.swift */; };
 		6A66C26D27295CDE00146E78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66C26C27295CDE00146E78 /* ContentView.swift */; };
 		6A66C26F27295CE700146E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A66C26E27295CE700146E78 /* Assets.xcassets */; };
@@ -17,6 +20,10 @@
 		6A821899273408A700F24AB6 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A821898273408A700F24AB6 /* ViewModifiers.swift */; };
 		6AAEC3AB27342A7100EFAE92 /* CellUserPrototypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAEC3AA27342A7100EFAE92 /* CellUserPrototypeView.swift */; };
 		6AAEC3AD27342B2900EFAE92 /* CellGroupPrototypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAEC3AC27342B2900EFAE92 /* CellGroupPrototypeView.swift */; };
+		6AAEC3AF2736D71600EFAE92 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAEC3AE2736D71500EFAE92 /* ContainerView.swift */; };
+		6AAEC3B12736D88100EFAE92 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAEC3B02736D88100EFAE92 /* FriendsView.swift */; };
+		6AAEC3B32736D89600EFAE92 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAEC3B22736D89600EFAE92 /* GroupsView.swift */; };
+		6AAEC3B52736D8AB00EFAE92 /* NewsfeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAEC3B42736D8AB00EFAE92 /* NewsfeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6A643B76274C04FB00E49C9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6A643B6C274BFB4400E49C9B /* mainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarView.swift; sourceTree = "<group>"; };
+		6A643B6E274C016F00E49C9B /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 		6A66C26727295CDE00146E78 /* PrackVK_swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrackVK_swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A66C26A27295CDE00146E78 /* PrackVK_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrackVK_swiftUIApp.swift; sourceTree = "<group>"; };
 		6A66C26C27295CDE00146E78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +75,10 @@
 		6A821898273408A700F24AB6 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		6AAEC3AA27342A7100EFAE92 /* CellUserPrototypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellUserPrototypeView.swift; sourceTree = "<group>"; };
 		6AAEC3AC27342B2900EFAE92 /* CellGroupPrototypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellGroupPrototypeView.swift; sourceTree = "<group>"; };
+		6AAEC3AE2736D71500EFAE92 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		6AAEC3B02736D88100EFAE92 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		6AAEC3B22736D89600EFAE92 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		6AAEC3B42736D8AB00EFAE92 /* NewsfeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A643B79274C05BB00E49C9B /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +107,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A643B69274BB4E200E49C9B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		6A66C25E27295CDD00146E78 = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +137,14 @@
 		6A66C26927295CDE00146E78 /* PrackVK_swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6A643B69274BB4E200E49C9B /* Entities */,
+				6AAEC3B62736D90200EFAE92 /* Views */,
 				6AAEC3A927342A5300EFAE92 /* Prototypes */,
 				6A66C26A27295CDE00146E78 /* PrackVK_swiftUIApp.swift */,
-				6A66C26C27295CDE00146E78 /* ContentView.swift */,
 				6A66C26E27295CE700146E78 /* Assets.xcassets */,
 				6A66C27327295CE700146E78 /* Info.plist */,
 				6A66C27027295CE700146E78 /* Preview Content */,
 				6A8218922731B42600F24AB6 /* Extensions.swift */,
-				6A8218942732664A00F24AB6 /* LoginView.swift */,
 				6A821898273408A700F24AB6 /* ViewModifiers.swift */,
 			);
 			path = PrackVK_swiftUI;
@@ -150,6 +184,21 @@
 			path = Prototypes;
 			sourceTree = "<group>";
 		};
+		6AAEC3B62736D90200EFAE92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A66C26C27295CDE00146E78 /* ContentView.swift */,
+				6AAEC3B42736D8AB00EFAE92 /* NewsfeedView.swift */,
+				6AAEC3B22736D89600EFAE92 /* GroupsView.swift */,
+				6AAEC3B02736D88100EFAE92 /* FriendsView.swift */,
+				6AAEC3AE2736D71500EFAE92 /* ContainerView.swift */,
+				6A8218942732664A00F24AB6 /* LoginView.swift */,
+				6A643B6C274BFB4400E49C9B /* mainTabBarView.swift */,
+				6A643B6E274C016F00E49C9B /* PhotosView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,12 +209,16 @@
 				6A66C26327295CDD00146E78 /* Sources */,
 				6A66C26427295CDD00146E78 /* Frameworks */,
 				6A66C26527295CDD00146E78 /* Resources */,
+				6A643B76274C04FB00E49C9B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PrackVK_swiftUI;
+			packageProductDependencies = (
+				6A643B78274C05BB00E49C9B /* ASCollectionView */,
+			);
 			productName = PrackVK_swiftUI;
 			productReference = 6A66C26727295CDE00146E78 /* PrackVK_swiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +290,9 @@
 				Base,
 			);
 			mainGroup = 6A66C25E27295CDD00146E78;
+			packageReferences = (
+				6A643B77274C05BB00E49C9B /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+			);
 			productRefGroup = 6A66C26827295CDE00146E78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,11 +335,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A66C26D27295CDE00146E78 /* ContentView.swift in Sources */,
+				6AAEC3AF2736D71600EFAE92 /* ContainerView.swift in Sources */,
 				6A8218932731B42600F24AB6 /* Extensions.swift in Sources */,
+				6A643B6D274BFB4500E49C9B /* mainTabBarView.swift in Sources */,
+				6AAEC3B12736D88100EFAE92 /* FriendsView.swift in Sources */,
+				6AAEC3B32736D89600EFAE92 /* GroupsView.swift in Sources */,
+				6A643B6F274C016F00E49C9B /* PhotosView.swift in Sources */,
 				6A821899273408A700F24AB6 /* ViewModifiers.swift in Sources */,
 				6A8218952732664A00F24AB6 /* LoginView.swift in Sources */,
 				6AAEC3AD27342B2900EFAE92 /* CellGroupPrototypeView.swift in Sources */,
 				6AAEC3AB27342A7100EFAE92 /* CellUserPrototypeView.swift in Sources */,
+				6AAEC3B52736D8AB00EFAE92 /* NewsfeedView.swift in Sources */,
 				6A66C26B27295CDE00146E78 /* PrackVK_swiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +666,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A643B77274C05BB00E49C9B /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A643B78274C05BB00E49C9B /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A643B77274C05BB00E49C9B /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A66C25F27295CDD00146E78 /* Project object */;
 }

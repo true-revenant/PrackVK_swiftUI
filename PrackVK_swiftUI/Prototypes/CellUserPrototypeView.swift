@@ -10,6 +10,9 @@ import SwiftUI
 fileprivate let screenWidth = UIScreen.main.bounds.size.width
 
 struct CellUserPrototypeView: View {
+    
+    var userName: String
+    
     var body: some View {
         HStack {
             Image("user_pic")
@@ -21,7 +24,7 @@ struct CellUserPrototypeView: View {
             
             VStack {
                 HStack {
-                    Text("Joe Satriani")
+                    Text(userName)
                         .modifier(MainCellTextModifier(fontSize: 20))
                     
                     Spacer()
@@ -53,6 +56,6 @@ struct CellUserPrototypeView: View {
 
 struct CellUserPrototypeView_Previews: PreviewProvider {
     static var previews: some View {
-        CellUserPrototypeView()
+        CellUserPrototypeView(userName: "Joe Satriani")
     }
 }

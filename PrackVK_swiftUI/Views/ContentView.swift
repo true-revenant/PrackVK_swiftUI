@@ -11,8 +11,8 @@ struct CellView: View {
     var body: some View {
         
         VStack {
-            CellUserPrototypeView()
-            CellGroupPrototypeView()
+            CellUserPrototypeView(userName: "Joe Satriani")
+            CellGroupPrototypeView(groupTitle: "Guitar lovers", membersCount: 100)
         }
     }
 }
