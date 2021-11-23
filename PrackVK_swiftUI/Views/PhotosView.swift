@@ -38,6 +38,7 @@ struct PhotosView: View {
     var body: some View {
         
         VStack {
+
             ASCollectionView(data: photos) { photo, _  in
                 
                 Image("user_pic")
@@ -52,6 +53,10 @@ struct PhotosView: View {
                     lineSpacing: 15
                 )
             }
+            .navigationTitle("Photos")
+            .navigationBarTitleDisplayMode(.inline)
+            //.navigationBarBackButtonHidden(true)
+            //.navigationBarHidden(true)
         }
         
     }
@@ -59,6 +64,7 @@ struct PhotosView: View {
 
 struct PhotosView_Previews: PreviewProvider {
     static var previews: some View {
+        
         PhotosView()
     }
 }

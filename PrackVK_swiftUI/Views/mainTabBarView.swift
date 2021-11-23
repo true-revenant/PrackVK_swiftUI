@@ -14,22 +14,22 @@ struct mainTabBarView: View {
             
             NewsfeedView()
                 .tabItem {
-                    Image(systemName: "phone.fill")
+                    Image(systemName: "newspaper.fill")
                     Text("Newsfeed")
                 }
             
             FriendsView()
                 .tabItem {
-                    Image(systemName: "phone.fill")
+                    Image(systemName: "person.2.circle")
                     Text("Friends")
               }
             
             GroupsView()
                 .tabItem {
-                    Image(systemName: "tv.fill")
+                    Image(systemName: "person.2.circle.fill")
                     Text("Groups")
               }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

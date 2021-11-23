@@ -44,14 +44,15 @@ struct FriendsView: View {
                 ForEach(friends.sorted(by: { $0.name < $1.name })) { friend in
 
                     NavigationLink(
-                        destination: PhotosView(),
+                        destination:
+                             PhotosView(),
                         label: {
-                            CellUserPrototypeView(userName: friend.name)//.listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
-                        }).listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
-                    
-                    //CellUserPrototypeView(userName: friend.name).listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
+                            CellUserPrototypeView(userName: friend.name)
+                        })
+                        .listRowInsets(EdgeInsets(top: 0.5, leading: 0, bottom: 0.5, trailing: 0))
                 }
             }
+            .navigationBarHidden(true)
         }
         
         //Text("FRIENDS")
@@ -60,6 +61,12 @@ struct FriendsView: View {
 
 struct FriendsView_Previews: PreviewProvider {
     static var previews: some View {
+        
         FriendsView()
+        
+//        Group {
+//            FriendsView()
+//            //FriendsView()
+//        }
     }
 }

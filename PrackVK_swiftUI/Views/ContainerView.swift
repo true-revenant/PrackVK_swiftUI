@@ -23,6 +23,7 @@ struct ContainerView: View {
                     isActive: $shouldShowMainView,
                     label: {})
             }
+            .navigationBarHidden(true)
         }
         
 //        NavigationView {
